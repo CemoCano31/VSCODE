@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="display">0</div>
+      <div class="buttons">
+        <!-- Zeile 1 -->
+        <button class="btn" data-action="clear">C</button>
+        <button class="btn" data-action="sign">±</button>
+        <button class="btn" data-action="percent">%</button>
+        <button class="btn" data-action="divide">/</button>
+
+        <!-- Zeile 2 -->
+        <button class="btn" data-action="digit">7</button>
+        <button class="btn" data-action="digit">8</button>
+        <button class="btn" data-action="digit">9</button>
+        <button class="btn" data-action="multiply">*</button>
+
+        <!-- Zeile 3 -->
+        <button class="btn" data-action="digit">4</button>
+        <button class="btn" data-action="digit">5</button>
+        <button class="btn" data-action="digit">6</button>
+        <button class="btn" data-action="minus">-</button>
+
+        <!-- Zeile 4 -->
+        <button class="btn" data-action="digit">1</button>
+        <button class="btn" data-action="digit">2</button>
+        <button class="btn" data-action="digit">3</button>
+        <button class="btn" data-action="plus">+</button>
+
+        <!-- Zeile 5 -->
+        <button class="btn zero" data-action="digit">0</button>
+        <button class="btn" data-action="dot">.</button>
+        <button class="btn equals" data-action="equals">=</button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

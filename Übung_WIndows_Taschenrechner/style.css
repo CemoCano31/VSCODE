@@ -1,0 +1,67 @@
+/* Grundlayout (Hintergrund, zentrierte Anzeige) */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Taschenrechner-Container */
+.calculator {
+  background: #222;
+  color: #fff;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Display */
+#display {
+  font-size: 2em;
+  padding: 20px;
+  text-align: right;
+  background: #333;
+  min-height: 60px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Container für die Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px; /* Abstand zwischen den Buttons */
+}
+
+/* Allgemeine Button-Stile */
+.btn {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: #444;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* Besondere Buttons */
+.zero {
+  grid-column: span 2; /* "0"-Button nimmt zwei Spalten ein */
+}
+
+.equals {
+  background: #ff9500;
+}
+
+.equals:hover {
+  background: #ffb700;
+}
